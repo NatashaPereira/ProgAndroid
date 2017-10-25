@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="natashapereira.aulainterface.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/user"
+        android:tint="#fff" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_weight="3"
+                android:src="@drawable/google"
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_weight="6"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Salvar em:"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="marcelom56@gmail.com"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:src="@drawable/arrow"
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+        </TableRow>
+
+        <TableRow
+            android:gravity="top"
+            android:layout_marginTop="25dp">
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_weight="3"
+                android:src="@drawable/user"
+                android:tint="#a2a5aa"
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_weight="6"
+                android:orientation="vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nome"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Sobrenome"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:src="@drawable/arrow"
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:layout_weight="3"
+                android:src="@drawable/phone"
+                android:tint="#a2a5aa"
+                android:layout_width="1dp"
+                android:layout_height="20dp"/>
+            <LinearLayout
+                android:layout_weight="6"
+                android:orientation="vertical">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Telefone"/>
+
+        </TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="Celular"
+                tools:text="Celular" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/email" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="E-mail"
+                tools:text="E-mail" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Residencial"
+                tools:text="Residencial" />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
