@@ -37,8 +37,15 @@ public class TelaCirculo extends AppCompatActivity {
         }
 
         Intent intencao = new Intent(getApplicationContext(), TelaResultado.class);
-        intencao.putExtras(mochila); //Passa a mochila para a intencao
-        startActivity(intencao);
+
+        intencao.putExtras(mochila);
+
+        startActivityForResult(intencao, 3);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        finish();
     }
 
 

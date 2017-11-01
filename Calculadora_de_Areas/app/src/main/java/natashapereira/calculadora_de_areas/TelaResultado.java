@@ -35,9 +35,6 @@ public class TelaResultado extends AppCompatActivity {
     }
 
     public void recomecar(View c) {
-        Intent intent = new Intent(this, MainActivity.class);// New activity
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
         finish();
     }
 }
